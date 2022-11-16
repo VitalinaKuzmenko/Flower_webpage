@@ -6,3 +6,30 @@
   --light-grey: #ededee;
   --transparent-white: rgba(0, 0, 0, 0.75);
 }
+
+body {
+  font-family: var(--body-font) !important;
+  font-size: 25px !important;
+  background-color: var(--light-grey) !important;
+  padding: 50px 50px;
+}
+
+/* top-navbar */
+.site-navbar-wrap {
+  background-color: white;
+}
+
+.site-navbar-wrap form input {
+  width: 80%;
+  border: none;
+}
+
+.site-navbar-top .menu-icon {
+  width: 20px;
+  height: auto;
+}
+
+/* nav bar */
+.menu {
+  background-color: var(--light-grey);
+}
