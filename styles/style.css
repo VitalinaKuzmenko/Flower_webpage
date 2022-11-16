@@ -1,0 +1,8 @@
+:root {
+  --heading-font: "Fjalla One", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --transparent-white: rgba(0, 0, 0, 0.75);
+}
