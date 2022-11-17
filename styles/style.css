@@ -4,14 +4,29 @@
   --red-brown: #a05941;
   --green-black: #133032;
   --light-grey: #ededee;
-  --transparent-white: rgba(0, 0, 0, 0.75);
+  --transparent-white: rgba(47, 47, 47, 0.4);
 }
 
 body {
   font-family: var(--body-font) !important;
   font-size: 20px !important;
   background-color: var(--light-grey) !important;
-  padding: 50px 50px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font) !important;
+  letter-spacing: 8px;
+  color: var(--red-brown);
+}
+
+.button {
+  padding: 10px 40px;
+  background-color: var(--red-brown);
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /* top-navbar */
@@ -32,4 +47,113 @@ body {
 /* nav bar */
 .menu {
   background-color: var(--light-grey);
+}
+
+/* main-section */
+.main_section {
+  background: linear-gradient(
+      to bottom,
+      var(--transparent-white),
+      var(--transparent-white)
+    ),
+    url("/media/main_page/main-img.webp") no-repeat center center fixed;
+  background-size: cover;
+  height: 40rem;
+  width: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.main_section .first-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main_section .small_logo {
+  width: 150px;
+  height: auto;
+}
+
+.main_section p {
+  border-bottom: 3px solid white;
+  text-align: center;
+  width: 70%;
+  margin: 0 20px 40px 20px;
+  letter-spacing: 10px;
+  padding-bottom: 5px;
+}
+
+.main_section h1 {
+  font-size: 56px;
+  margin: 15px 0;
+  color: white;
+}
+
+.main_section h4 {
+  margin: 20px 60px 50px 60px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.main_section a:hover {
+  color: black;
+  background-color: rgb(209, 176, 161);
+}
+
+/* type of flowers */
+.type_of_flowers .flower-container {
+  margin: 10px 0;
+  padding: 0;
+  position: relative;
+}
+
+.type_of_flowers img {
+  width: 100%;
+  height: auto;
+}
+
+.type_of_flowers .text-on-img {
+  color: black;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.type_of_flowers hr {
+  width: 5%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 3px solid var(--red-brown);
+  opacity: 100;
+}
+
+/* contact */
+.contact img {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* footer */
+
+footer iframe {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 546px) {
+  body {
+    padding: 50px 50px;
+  }
 }
