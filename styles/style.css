@@ -192,14 +192,57 @@ h3 {
 }
 
 /* contact */
+.contact {
+  margin: 40px 0;
+  font-size: 18px !important;
+  line-height: 2.2em;
+}
+
+.contact .form-container {
+  background-color: white;
+  width: 95%;
+  padding: 30px;
+}
+
+.contact .form-container .contact-h1 {
+  font-family: var(--body-font) !important;
+  text-align: center;
+  font-size: 25px;
+}
+
 .contact img {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-/* footer */
+.contact .form-container hr {
+  width: 7%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 3px solid var(--red-brown);
+  opacity: 100;
+}
 
+.contact .form-container .button {
+  width: 100%;
+  margin-top: 2em;
+  border: none;
+}
+
+.contact .form-container input {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.contact .form-container textarea {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+/* footer */
 footer iframe {
   width: 100%;
   height: auto;
