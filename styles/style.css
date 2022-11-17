@@ -27,6 +27,7 @@ h3 {
   color: white;
   text-decoration: none;
   font-size: 16px;
+  transition: all ease-in-out 400ms;
 }
 
 /* top-navbar */
@@ -133,8 +134,13 @@ h3 {
   text-align: center;
 }
 
+.type_of_flowers .text-on-img a:hover {
+  color: black;
+  background-color: rgb(209, 176, 161);
+}
+
 .type_of_flowers hr {
-  width: 5%;
+  width: 20px;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -151,7 +157,7 @@ h3 {
 }
 
 .about .about-text hr {
-  width: 5%;
+  width: 20px;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -191,6 +197,11 @@ h3 {
   color: black;
 }
 
+.about-ad .button:hover {
+  background-color: #3f5e66;
+  color: white;
+}
+
 /* contact */
 .contact {
   margin: 40px 0;
@@ -217,7 +228,7 @@ h3 {
 }
 
 .contact .form-container hr {
-  width: 7%;
+  width: 25px;
   display: block;
   margin: 0 auto;
   margin-top: 20px;
@@ -230,6 +241,11 @@ h3 {
   width: 100%;
   margin-top: 2em;
   border: none;
+}
+
+.contact .form-container .button:hover {
+  color: black;
+  background-color: rgb(209, 176, 161);
 }
 
 .contact .form-container input {
@@ -282,14 +298,14 @@ footer .subscribe-form {
     "button";
 }
 
-.subscribe-form label {
+footer .subscribe-form label {
   grid-area: label;
   font-size: 16px;
   width: 90%;
   justify-self: center;
 }
 
-.subscribe-form input {
+footer .subscribe-form input {
   grid-area: input;
   width: 90%;
   justify-self: center;
@@ -301,7 +317,7 @@ footer .subscribe-form {
   color: white;
 }
 
-.subscribe-form button {
+footer .subscribe-form button {
   grid-area: button;
   width: 90%;
   justify-self: center;
@@ -313,6 +329,12 @@ footer .subscribe-form {
   font-size: 16px;
   border: none;
   border-radius: 0;
+  transition: all ease-in-out 400ms;
+}
+
+footer .subscribe-form button:hover {
+  background-color: #3f5e66;
+  color: white;
 }
 
 footer .footer-icons {
