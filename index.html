@@ -24,53 +24,54 @@
         <div class="site-navbar-wrap">
             <div class="container-fluid site-navbar-top">
                 <div class="row">
-                    <div class="col-9">
+                    <div class="col-8">
                         <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                            <input class="form-control me-2 top-search-input" type="search" placeholder="Search..."
+                                aria-label="Search">
                             <button class="btn btn-outline-success" type="submit" hidden>Search</button>
                         </form>
                     </div>
-                    <div class="col-3 d-flex  flex-row align-self-center justify-content-end">
-                        <div class="login"> <img class="menu-icon" src="icons/login.svg" alt="Log in icon">
+                    <div class="col-4 d-flex  flex-row align-self-center justify-content-end">
+                        <div class="login-element"> <img class="menu-icon" src="icons/login.svg" alt="Log in icon">
                             <span>Log in</span>
                         </div>
-                        <div class="cart"><img class="menu-icon" src="icons/cart.svg" alt="Add to cart icon"></div>
+                        <div class="cart"><img class="menu-icon cart-icon" src="icons/cart.svg" alt="Add to cart icon">
+                            <p class="text-on-cart">1</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg menu">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">PRICKLES & CO.</a>
+            <nav class="navbar navbar-expand-md menu">
+                <div class="container-fluid menu-container">
+                    <a class="navbar-brand logo" href="index.html">PRICKLES & CO.</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="collapse navbar-collapse" id="navbarText">
-                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Shop</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">FAQ</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4"><span class="navbar-text">
-                                We Deliver to Your Doorstep
-                            </span></div>
+
+                    <div class="collapse navbar-collapse collapse-menu" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
                     </div>
+                    <span class="navbar-text">
+                        We Deliver to Your Doorstep
+                    </span>
                 </div>
-            </nav>
+        </div>
+        </nav>
         </div>
     </header>
 
@@ -144,13 +145,13 @@
                 <hr>
                 <form>
                     <div class="row">
-                        <div class="form-group col-lg-6">
+                        <div class="form-group col-md-6">
                             <label for="first_name">First name *</label>
                             <input type="text" class="form-control input-text" id="first_name" name="first_name"
                                 minlength="3" required />
                         </div>
 
-                        <div class="form-group col-lg-6">
+                        <div class="form-group col-md-6">
                             <label for="last_name">Last name *</label>
                             <input type="text" class="form-control input-text" id="last_name" name="last_name"
                                 minlength="3" required />
@@ -181,7 +182,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 mini-section">
+                <div class="col-md-4 mini-section">
                     <h1>OUR STORE</h1>
                     <p>Address: 500 Terry Francois Street San Francisco, CA 94158
                         <br>
@@ -190,7 +191,7 @@
                         Email: info@mysite.com
                     </p>
                 </div>
-                <div class="col-lg-4 mini-section">
+                <div class="col-md-4 mini-section">
                     <h1>OPENING HOURS</h1>
                     <p>Mon - Fri: 7am - 10pm
                         <br>
@@ -199,7 +200,7 @@
                         ​Sunday: 8am - 11pm
                     </p>
                 </div>
-                <div class="col-lg-4 mini-section">
+                <div class="col-md-4 mini-section">
                     <h1>HELP</h1>
                     <a href="#">Shipping & Returns</a>
                     <br>

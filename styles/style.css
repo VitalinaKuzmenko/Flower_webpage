@@ -31,13 +31,9 @@ h3 {
 }
 
 /* top-navbar */
+
 .site-navbar-wrap {
   background-color: white;
-}
-
-.site-navbar-wrap form input {
-  width: 80%;
-  border: none;
 }
 
 .site-navbar-top .menu-icon {
@@ -45,9 +41,109 @@ h3 {
   height: auto;
 }
 
+.site-navbar-top .loup-icon {
+  height: 10px;
+}
+
+.site-navbar-top .top-search-input {
+  background-image: url("/icons/loup.svg");
+  background-position: left center;
+  padding-left: 30px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  margin: 20px 0;
+  width: 80%;
+  border: none;
+}
+
+.site-navbar-top .top-search-input:hover {
+  border: 1px solid var(--red-brown);
+  border-radius: 0;
+}
+
+.site-navbar-top .cart-icon {
+  margin-right: 5px;
+  margin-bottom: 3px;
+}
+
+.site-navbar-top .cart {
+  position: relative;
+}
+
+.site-navbar-top .text-on-cart {
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  font-size: 12px;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site-navbar-top .login-element {
+  visibility: hidden;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("/media/main_page/Hamburger_icon.png") !important;
+  position: absolute;
+  right: 3%;
+  grid-area: toggle;
+}
+
 /* nav bar */
 .menu {
   background-color: var(--light-grey);
+  padding: 20px 0 30px 10px !important;
+}
+
+.menu .menu-container {
+  display: grid !important;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "logo logo logo logo toggle toggle toggle toggle"
+    "text text text text text text . .";
+}
+
+.menu .logo {
+  color: var(--red-brown);
+  font-family: var(--heading-font);
+  font-size: 24px;
+  grid-area: logo;
+}
+
+.menu .navbar-text {
+  color: var(--red-brown);
+  font-family: var(--heading-font);
+  font-size: 16px;
+  letter-spacing: 3px;
+  grid-area: text;
+}
+
+.menu .collapse-menu {
+  grid-area: menu;
+  padding-left: 20px;
+}
+
+.menu .collapse-menu a {
+  color: var(--red-brown);
+  font-size: 16px;
+}
+
+.menu .collapse-menu a:hover {
+  color: black;
 }
 
 /* main-section */
@@ -90,7 +186,7 @@ h3 {
 }
 
 .main_section h1 {
-  font-size: 56px;
+  font-size: 48px;
   margin: 15px 0;
   color: white;
 }
@@ -172,7 +268,8 @@ h3 {
 
 .about img {
   width: 100%;
-  height: 352px;
+  height: 350px;
+  object-fit: cover;
 }
 
 .about .about-ad {
@@ -366,8 +463,32 @@ footer .c-footer a {
   color: var(--red-brown);
 }
 
-@media (min-width: 546px) {
+@media (min-width: 768px) {
   body {
     padding: 50px 50px;
+  }
+
+  /* navbar */
+  .menu .menu-container {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "logo logo menu menu menu menu menu text text text";
+  }
+
+  .site-navbar-top .login-element {
+    visibility: visible;
+    margin-right: 10px;
+  }
+
+  .menu .navbar-text {
+    color: var(--red-brown);
+    font-family: var(--heading-font);
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .menu .navbar-text {
+    text-align: end;
   }
 }
