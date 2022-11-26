@@ -1,20 +1,22 @@
+:root {
+  --heading-font: "Fjalla One", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --transparent-white: rgba(47, 47, 47, 0.4);
+}
+
 /* main_section */
 .main_section {
   background: linear-gradient(
       to bottom,
-      var(--transparent-white),
-      var(--transparent-white)
+      rgba(23, 42, 23, 0.5),
+      rgba(23, 42, 23, 0.5)
     ),
     url("/media/products/cacti_main.webp") no-repeat center center fixed;
   background-size: cover;
   height: 40rem;
-  width: auto;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
 }
 
 .main_section h1 {
@@ -25,10 +27,9 @@
 
 .main_section p {
   text-align: center;
-  width: 70%;
-  margin: 0 20px 40px 20px;
+  width: 90%;
   letter-spacing: 0;
-  padding-bottom: 5px;
+  border-bottom: hidden;
 }
 
 .main_section .link {
@@ -44,5 +45,61 @@
 .main_section img {
   width: 43px;
   height: auto;
-  /* padding: 100px 0; */
+}
+
+/* list_of_products */
+.list_of_products {
+  padding: 0 10px;
+}
+
+.list_of_products h1 {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.list_of_products .product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--red-brown);
+  position: relative;
+}
+
+.list_of_products .crossed_text {
+  text-decoration: line-through;
+}
+
+.list_of_products .product-box .product {
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.button {
+  padding: 10px 40px;
+  background-color: var(--red-brown);
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-align: center;
+  transition: all ease-in-out 400ms;
+  width: 100%;
+}
+
+.button:hover {
+  color: rgb(233, 216, 208);
+  background-color: rgb(194, 139, 113);
+}
+
+.list_of_products .text-over-image {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: rgba(0, 0, 0, 0.774);
+  color: white;
+  font-size: 22px;
+  padding: 5px 20px;
 }
