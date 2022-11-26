@@ -11,6 +11,7 @@ body {
   font-family: var(--body-font) !important;
   font-size: 20px !important;
   background-color: var(--light-grey) !important;
+  overflow-x: hidden;
 }
 
 h1,
@@ -212,10 +213,6 @@ h3 {
 /* type of flowers */
 .type_of_flowers {
   margin-bottom: 20px;
-}
-
-.type_of_flowers .container-fluid {
-  padding: 0;
 }
 
 .type_of_flowers .flower-container {
@@ -545,6 +542,11 @@ footer .c-footer a {
 
 /* min-width: 992px */
 @media (min-width: 992px) {
+  .type_of_flowers .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
   .main_section {
     height: 45rem;
   }
