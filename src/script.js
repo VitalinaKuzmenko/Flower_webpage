@@ -1,7 +1,6 @@
-//positioning section when clicking dropdown_img
-$("#dropdown_img").click(function () {
+//positioning section when clicking dropdown_img // scrolling down
+$("#dropdown_img, #about_link, #contact_link").click(function () {
   let height;
-
   if (window.innerWidth > 768) {
     height = $("#navbar").height();
   } else {
@@ -13,7 +12,6 @@ $("#dropdown_img").click(function () {
     {
       scrollTop: $(id).offset().top - height,
     },
-    1000
+    100
   );
-  console.log(height);
 });
