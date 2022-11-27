@@ -253,6 +253,11 @@ h3 {
 }
 
 /* about us */
+.about:target {
+  padding-top: 151px;
+  margin-top: -151px;
+}
+
 .about .about-text {
   background-color: white;
   text-align: center;
@@ -323,6 +328,11 @@ h3 {
 }
 
 /* contact */
+.contact:target {
+  padding-top: 151px;
+  margin-top: -151px;
+}
+
 .contact {
   margin: 40px 0;
   font-size: 18px !important;
