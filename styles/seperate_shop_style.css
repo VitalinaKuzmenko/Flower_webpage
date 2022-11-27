@@ -9,12 +9,27 @@
 
 /* main_section */
 .main_section {
+  background: none;
+}
+
+.cacti_main_section {
   background: linear-gradient(
       to bottom,
       rgba(23, 42, 23, 0.5),
       rgba(23, 42, 23, 0.5)
     ),
     url("/media/products/cacti_main.webp") no-repeat center center fixed;
+  background-size: cover;
+  height: 60rem;
+}
+
+.plant_main_section {
+  background: linear-gradient(
+      to bottom,
+      rgba(23, 42, 23, 0.5),
+      rgba(23, 42, 23, 0.5)
+    ),
+    url("/media/products/plants_main.webp") no-repeat center center fixed;
   background-size: cover;
   height: 60rem;
 }
