@@ -180,3 +180,20 @@
     font-size: 60px;
   }
 }
+
+@media (max-width: 576px) {
+  .cacti_main_section {
+    height: 40rem;
+  }
+  .plant_main_section {
+    height: 40rem;
+  }
+
+  .succulents_main_section {
+    height: 40rem;
+  }
+
+  .shop-all_main_section {
+    height: 40rem;
+  }
+}
