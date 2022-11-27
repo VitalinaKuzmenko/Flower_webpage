@@ -14,4 +14,5 @@ $("#dropdown_img, #about_link, #contact_link").click(function () {
     },
     100
   );
+  console.log(height);
 });
