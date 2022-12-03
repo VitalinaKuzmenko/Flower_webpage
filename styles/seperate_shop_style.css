@@ -141,23 +141,10 @@
   padding: 5px 20px;
 }
 
-@media (min-width: 768px) {
-  .main_section h1 {
-    font-size: 100px;
-  }
-
-  .main_section p {
-    width: 70%;
-  }
-
-  .list_of_products .product-box {
-    margin-bottom: 40px;
-  }
-}
-
 @media (min-width: 992px) {
   .main_section h1 {
     font-size: 120px;
+    padding: 0 40px;
   }
 
   .main_section .link {
@@ -173,6 +160,20 @@
 
   .list_of_products h1 {
     font-size: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main_section h1 {
+    font-size: 100px;
+  }
+
+  .main_section p {
+    width: 70%;
+  }
+
+  .list_of_products .product-box {
+    margin-bottom: 40px;
   }
 }
 
