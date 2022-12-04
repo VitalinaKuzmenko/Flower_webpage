@@ -1,6 +1,30 @@
+:root {
+  --heading-font: "Fjalla One", sans-serif;
+  --body-font: "Outfit", sans-serif;
+  --red-brown: #a05941;
+  --green-black: #133032;
+  --light-grey: #ededee;
+  --transparent-white: rgba(47, 47, 47, 0.4);
+}
+
+body {
+  font-family: var(--body-font) !important;
+  font-size: 20px !important;
+  background-color: var(--light-grey) !important;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+main {
+  margin: 0;
+  padding: 0 40px;
+  padding-top: 200px;
+  background-color: white;
+}
+
 .accordion__header {
   padding: 1em;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   margin-top: 2px;
   display: flex;
   justify-content: space-between;
@@ -13,14 +37,13 @@
   font-size: 16px;
 }
 .accordion__header.is-active {
-  background-color: #000;
   color: #fff;
 }
 
 .accordion__toggle {
   margin-left: 10px;
   height: 3px;
-  background-color: #222;
+  /* background-color: #222; */
   width: 13px;
   display: block;
   position: relative;
@@ -50,9 +73,35 @@
 .accordion__body {
   display: none;
   padding: 1em;
-  border: 1px solid #ccc;
   border-top: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--red-brown);
 }
 .accordion__body.is-active {
   display: block;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--body-font) !important;
+  letter-spacing: 0;
+}
+
+.asked-section {
+  text-align: center;
+}
+
+.themes {
+  display: flex;
+  align-items: center;
+}
+
+.themes p {
+  padding-right: 26px;
+  font-size: 14px;
+  color: var(--red-brown);
 }
